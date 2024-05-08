@@ -60,3 +60,12 @@
 html {
 	scroll-behavior: smooth;
 }
+*,
+*:before,
+*:after {
+  @apply cursor-default;
+}
+
+a, button {
+  @apply cursor-pointer;
+}

@@ -89,10 +89,12 @@ const Navbar = () => {
 						</>
 					)} */}
 					
-							
-							<Button variant="default">
+					<Button variant="default" onClick={()=>document.getElementById('my_modal_1').showModal()}>
 								<Link href="/">Submit Your Boilerplate</Link>
 							</Button>
+
+
+							
 						
 				</div>
 				<div className="lg:hidden">
@@ -206,6 +208,7 @@ const Navbar = () => {
 					)}
 				</div>
 			</div>
+			
 		</div>
 	);
 };

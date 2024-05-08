@@ -89,6 +89,10 @@ module.exports = {
 				typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
 
 			},
+			cursor: {
+				default: 'url(/images/cursor.png), default',
+				pointer: 'url(/images/cursorPointer.png), pointer',
+			  },
 		},
 	},
 	plugins: [require("tailwindcss-animate"),require('daisyui'),],
