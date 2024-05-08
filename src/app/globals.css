@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 49 94% 66%;
+		--foreground: 49 94% 66%;
+		--card: 49 94% 66%;
+		--card-foreground: 49 94% 66%;
+		--popover: 49 94% 66%;
+		--popover-foreground: 49 94% 66%;
+		--primary: 49 94% 66%;
+		--primary-foreground: 220 36% 11%;
+		--secondary: 220 36% 11%;
+		--secondary-foreground: 49 94% 66%;
+		--muted: 49 94% 66%;
+		--muted-foreground: 49 94% 66%;
+		--accent: 49 94% 66%;
+		--accent-foreground: 49 94% 66%;
+		--destructive: 49 94% 66%;
+		--destructive-foreground: 49 94% 66%;
+		--border: 49 94% 66%;
+		--input: 49 94% 66%;
+		--ring: 49 94% 66%;
+	}
+
+	.dark {
+		--background: 224 71.4% 4.1%;
+		--foreground: 210 20% 98%;
+		--card: 224 71.4% 4.1%;
+		--card-foreground: 210 20% 98%;
+		--popover: 224 71.4% 4.1%;
+		--popover-foreground: 210 20% 98%;
+		--primary: 263.4 70% 50.4%;
+		--primary-foreground: 210 20% 98%;
+		--secondary: 215 27.9% 16.9%;
+		--secondary-foreground: 210 20% 98%;
+		--muted: 215 27.9% 16.9%;
+		--muted-foreground: 217.9 10.6% 64.9%;
+		--accent: 215 27.9% 16.9%;
+		--accent-foreground: 210 20% 98%;
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 210 20% 98%;
+		--border: 215 27.9% 16.9%;
+		--input: 215 27.9% 16.9%;
+		--ring: 263.4 70% 50.4%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}
