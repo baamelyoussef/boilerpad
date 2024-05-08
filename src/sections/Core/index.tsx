@@ -33,17 +33,17 @@ console.log(data);
 <div>
 <div className="flex flex-wrap gap-4">
 
-{boilerPlates?.map((boilerplate:any)=>{
+{boilerPlates?.map((boilerplate:any,index:number)=>{
 return(
-<div className="card w-64 bg-slate-900 shadow-xl h-82 hadow-lg transition-all duration-700 hover:scale-105">
+<div key={index} className="card w-64 bg-slate-900 shadow-xl h-82 hadow-lg transition-all duration-700 hover:scale-105">
 <figure><img src={(process.env.NEXT_PUBLIC_SUPABASE_URL ?? '') + process.env.NEXT_PUBLIC_SUPABASE_STORAGE_PATH+ boilerplate?.lp_image} alt="lp_image" className="h-[9rem]"/></figure>
   <div className="p-4">
 <div className="flex flex-row justify-between w-full items-center">
   <div className=" pb-2 flex items-center  gap-2 h-8">
     {
-        boilerplate?.boilerplates_techs?.map((boilerplates_tech:any)=>{
+        boilerplate?.boilerplates_techs?.map((boilerplates_tech:any,index:number)=>{
             return(
-<div className="w-full">
+<div className="w-full" key={index}>
     <div className="tooltip  z-10" data-tip={boilerplates_tech?.techs?.name}>
     <div className="w-6 ">
 
