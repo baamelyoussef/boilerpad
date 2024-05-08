@@ -29,7 +29,7 @@ export const SubmissionModal = () => {
             <div className="modal-box bg-[#fadc57]">
             <form
   >
-                <div className="flex justify-between items-stretch"><div className="flex flex-col mb-4"><h3 className="text-xl text-[#131a29] font-bold ">Boilerplate Submission </h3>  <p className="text-[#131a29]">Just share your links & i'll gather the data myself</p></div>
+                <div className="flex justify-between items-stretch"><div className="flex flex-col mb-4"><h3 className="text-xl text-[#131a29] font-bold ">Boilerplate Submission </h3>  <p className="text-[#131a29]">Just share your links & i&apos;ll gather the data myself</p></div>
                 <Cross1Icon className=" text-[#131a29] cursor-pointer" onClick={()=>document.getElementById('my_modal_1').close()}/>
                </div> <label className="input input-bordered flex items-center gap-2 my-2">
                     <p className="min-w-38">Personal Twitter Link</p>
