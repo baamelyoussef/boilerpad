@@ -14,9 +14,10 @@ import WhyUs from "@/sections/WhyUs";
 export default function Home() {
 	return (
 		<main>
-			<div className="bg-gradient-to-b from-gray-900 to-gray-800 animate-gradient px-[100px] pb-[80px] text-white">
+			<div className="bg-gradient-to-b from-gray-900 to-gray-800 animate-gradient px-[55px] pb-[80px] text-white">
 				<Navbar />
 				<Header />
+				
 				<Core/>
 			</div>
 			<SubmissionModal/>

@@ -6,29 +6,12 @@ const supabase = createClient(
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6d2l0ZGFqeHVkaHlham5vbHdyIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcxNTE3MTkwNSwiZXhwIjoyMDMwNzQ3OTA1fQ.zfy-eMknFK9NoTuVdBZW6q9B7pThmbRPaZ767MM7Zag" ||
     ""
 );
-export const getAllBoilerplates = async () => {
+export const getAllCreators = async () => {
   const { data, error } = await supabase
-    .from("boilerplates")
+    .from("creators")
     // .select('*')
     .select(
-      `name,
-      description,
-      lp_image,
-      link,
-      price_from,
-      price_to,
-      creators(
-        id,
-        name,
-        image_id,
-        twitter_link
-    ),
-    boilerplates_techs(
-        techs(
-            id,name,image_id
-        )
-        
-      )`
+      `*`
     );
   return data;
 };
